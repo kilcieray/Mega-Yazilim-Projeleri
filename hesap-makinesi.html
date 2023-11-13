@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <title>Hesap Makinesi</title>
+    <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Hesap Makinesi</h1>
+</head>
+<style>
+    button {
+        height: 100px;
+        width: 100px;
+        font-size: 50px;
+        color: black;
+        background-color: gray;
+        border-width: 8px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+</style>
+<body>
+    <form name="hesaplayici">
+        <input type="textfield" name="sonuc" style="height: 96px;width: 300px;font-size: 50px;background-color: rgb(77, 116, 0);">
+        <button type="reset" style="height: 100px;width: 100px;font-size: 50px">C</button><br>
+        <button type="button" onclick="document.hesaplayici.sonuc.value+='7'">7</button>
+        <button type="button" onclick="document.hesaplayici.sonuc.value+='8'">8</button>
+        <button type="button" onclick="document.hesaplayici.sonuc.value+='9'">9</button>
+        <button type="button" onclick="document.hesaplayici.sonuc.value+='+'">+</button><br>
+        <button type="button" onclick="document.hesaplayici.sonuc.value+='4'">4</button>
+        <button type="button" onclick="document.hesaplayici.sonuc.value+='5'">5</button>
+        <button type="button" onclick="document.hesaplayici.sonuc.value+='6'">6</button>
+        <button type="button" onclick="document.hesaplayici.sonuc.value+='-'">-</button><br>
+        <button type="button" onclick="document.hesaplayici.sonuc.value+='1'">1</button>
+        <button type="button" onclick="document.hesaplayici.sonuc.value+='2'">2</button>
+        <button type="button" onclick="document.hesaplayici.sonuc.value+='3'">3</button>
+        <button type="button" onclick="document.hesaplayici.sonuc.value+='*'">*</button><br>
+        <button type="button" onclick="document.hesaplayici.sonuc.value+='0'">0</button>
+        <button type="button" onclick="document.hesaplayici.sonuc.value=eval(document.hesaplayici.sonuc.value)" style="height: 100px;width: 204px;font-size: 50px">=</button>
+        <button type="button" onclick="document.hesaplayici.sonuc.value+='/'">/</button>
+    </form>
+    <p style="font-size: 20px;">Hazırlayan : Eray KİLCİ</p>
+</body>
+</html>
