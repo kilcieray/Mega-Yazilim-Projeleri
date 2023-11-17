@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Hesap Makinesi</title>
-    <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Hesap Makinesi</h1>
+    <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;text-align: center;;">Hesap Makinesi</h1>
 </head>
 <style>
     button {
@@ -15,8 +15,8 @@
     }
 </style>
 <body>
-    <form name="hesaplayici">
-        <input type="textfield" name="sonuc" style="height: 96px;width: 300px;font-size: 50px;background-color: rgb(77, 116, 0);">
+    <form name="hesaplayici" style="text-align: center;">
+        <input type="text" name="sonuc" style="height: 96px;width: 300px;font-size: 50px;background-color: rgb(77, 116, 0);">
         <button type="reset" style="height: 100px;width: 100px;font-size: 50px">C</button><br>
         <button type="button" onclick="document.hesaplayici.sonuc.value+='7'">7</button>
         <button type="button" onclick="document.hesaplayici.sonuc.value+='8'">8</button>
@@ -34,6 +34,6 @@
         <button type="button" onclick="document.hesaplayici.sonuc.value=eval(document.hesaplayici.sonuc.value)" style="height: 100px;width: 204px;font-size: 50px">=</button>
         <button type="button" onclick="document.hesaplayici.sonuc.value+='/'">/</button>
     </form>
-    <p style="font-size: 20px;">Hazırlayan : Eray KİLCİ</p>
+    <p style="font-size: 20px;text-align: center;">Hazırlayan : Eray KİLCİ</p>
 </body>
 </html>
